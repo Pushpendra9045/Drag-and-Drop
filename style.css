@@ -1,0 +1,526 @@
+/* Setting Web Page margin and padding */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Styling Headings */
+h1{
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+/* Implementing navigation Bar */
+
+nav{
+  position: fixed;
+  width: 100vw;
+  background-color: #1b9c85;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.15);
+  z-index: 10;
+ 
+}
+
+
+/* Adjusting logo in navigation bar  */
+nav img {
+  height: 4rem;
+  margin-left: 2.5rem;
+  padding: .1rem;
+  cursor: pointer;
+}
+
+nav img:hover{
+ scale: 1.08;
+ transition: ease-in;
+}
+
+/* Styling table inside navigation tag */
+nav .navigation ul {
+  margin-right: 3.5rem;
+  padding: .1rem;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+#bar{
+  display: none;
+}
+
+#bar:hover{
+  scale: 1.001;
+ transition: ease-in;
+}
+
+nav .navigation ul li {
+  list-style: none;
+  padding: 0px 20px;
+  cursor: pointer;
+}
+nav .navigation ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 500;
+  transition: 0.3s ease;
+}
+
+
+/* Adding hover effect on links */
+nav .navigation ul li a:hover {
+  color: #bcbce9;
+}
+
+/* Implemention of navigation Bar Ends here */
+
+
+
+/* Implementation of Drag and drop intro part */
+
+.drag_n_drop_container{
+    padding: 5.5rem 3rem !important;
+    display: flex;
+    /* Here by default flex direction will be row. so there is no need to explicitily specify it */
+    justify-content: center; 
+    align-items: flex-start !important; 
+    gap: 1.5rem;
+}
+
+
+section:nth-child(even) {
+  background: #eee;
+}
+
+
+/* Styles for the home section container */
+#Home-container .home-img {
+  width: 55%;
+}
+
+/* Styles for the home image */
+#Home-container .home-img img {
+  width: 100%;
+  margin-top: 1rem;
+}
+
+/* Styles for the home text container */
+#Home-container .home-text {
+  width: 40%;
+  margin-top: 1rem;
+}
+
+/* Styles for the home text heading */
+#Home-container .home-text h2 {
+  color: black;
+  padding-bottom: 15px;
+}
+
+/* Styles for the home text paragraph */
+#Home-container .home-text p {
+  color: #537188;
+  font-weight: 300;
+}
+
+/* Styles for the home feature section */
+#Home-container .home-text .home-fe {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-top: 30px;
+}
+
+/* Styles for the home feature images */
+#Home-container .home-text .home-fe img {
+  width: 50px;
+  background-size: cover;
+  background-position: center;
+  margin: 20px;
+}
+
+/* Styles for the home feature text */
+#Home-container .home-text .home-fe .fe-text {
+  width: 90%;
+}
+
+/* Styles for the home feature heading */
+#Home-container .home-text .home-fe .fe-text h5 {
+  font-size: 16px;
+}
+
+/* Media query for screens with a maximum width of 750px */
+@media screen and (max-width: 750px) {
+  /* Styles for the drag and drop container when viewed on smaller screens */
+  .drag_n_drop_container {
+    flex-direction: column;
+  }
+
+  /* Styles for the home image when viewed on smaller screens */
+  #Home-container .home-img {
+    width: 90%;
+    margin: auto;
+  }
+
+  /* Styles for the home text when viewed on smaller screens */
+  #Home-container .home-text {
+    width: 90%;
+    margin: auto;
+  }
+}
+
+
+
+
+/* Media query for screens with a maximum width of 550px */
+@media screen and (max-width: 550px) {
+  /* Styles for the drag and drop container when viewed on smaller screens */
+  .drag_n_drop_container {
+    width: 100%;
+    margin: auto;
+    padding: 4.5rem .1rem !important;
+  }
+
+  /* Styles to hide the list items */
+  .all_list {
+    display: none;
+  }
+
+  /* Styles for the bar element */
+  #bar {
+    display: unset;
+    background-color: transparent;
+  }
+
+  /* Styles for the navigation list in the navigation bar */
+  nav .navigation ul {
+    margin-right: 1.5rem;
+    padding: .1rem;
+  }
+}
+
+
+
+/* Drag and drop Part styling */
+
+/* Styles for the container element */
+.container {
+  width: 100%;
+  background-color: aquamarine;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Styles for the service content */
+.service_content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+
+/* Styles for the service heading */
+.service_heading {
+  color: black;
+  margin: 10px;
+  padding-top: 50px;
+}
+
+/* Styles for the reset button */
+#reset-button {
+  margin-bottom: 2rem;
+  padding: 15px 16px;
+}
+
+/* Media query for screens with a maximum width of 550px */
+@media screen and (max-width: 550px) {
+  /* Styles for the service content on smaller screens */
+  .service_content {
+    flex-direction: column;
+  }
+
+  /* Styles for the left and right boxes on smaller screens */
+  #left,
+  #right {
+    width: 200px;
+    margin: 0.1rem;
+  }
+}
+
+/* Styles for the left and right boxes */
+#left,
+#right {
+  width: 300px;
+  height: 200px;
+  margin: 0.5rem;
+  border: 2px dashed black !important;
+  background-color: #a5c3c3;
+}
+
+/* Styles for the list items */
+.list {
+  background: #e91e63;
+  height: 60px;
+  margin: 30px;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  cursor: grab;
+  touch-action: none;
+}
+
+/* Styles for the dragging state of list items */
+.list.dragging {
+  opacity: 0.5;
+}
+
+/* Styles for the images within list items */
+.list img {
+  width: 70px;
+  margin-right: 15px;
+  margin-left: 20px;
+  height: 70px;
+  margin-bottom: 20px;
+}
+
+
+
+
+/* review section Styling Starts*/
+
+/* Styles for the sub-heading */
+.sub-heading {
+  text-align: center;
+  color: #1b9c85;
+  font-size: 2rem;
+  padding-top: 1rem;
+}
+
+/* Styles for the heading */
+.heading {
+  text-align: center;
+  color: black;
+  font-size: 1.5rem;
+  padding-bottom: 2rem;
+}
+
+/* Styles for the slide container */
+.slide_container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 3.4rem;
+}
+
+/* Styles for the slides */
+.slide {
+  width: 30%;
+  background-color: #e3ebea;
+  border-radius: 10px;
+}
+
+/* Styles for the slide on hover */
+.slide:hover {
+  background-color: #c3dbd8;
+  cursor: pointer;
+}
+
+/* Styles for the slide header */
+.slide .slide_header {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  height: 45%;
+  width: 100%;
+  margin: auto;
+  padding: 30px;
+  position: relative;
+}
+
+/* Styles for the slide header image */
+.slide .slide_header img {
+  position: absolute;
+  left: 5%;
+  top: 10%;
+  bottom: 5%;
+  height: 100%;
+  width: 40%;
+  margin: auto;
+  border-radius: 50%;
+}
+
+/* Styles for the slide header text */
+.slide .slide_header h2 {
+  position: absolute;
+  left: 50%;
+  top: 20%;
+  height: 100%;
+  width: 40%;
+  margin: auto;
+}
+
+/* Styles for the slide content */
+.slide .slide_content {
+  padding: 10px;
+}
+
+/* Media query for screens with a maximum width of 550px */
+@media screen and (max-width: 550px) {
+  /* Styles for the slide container on smaller screens */
+  .slide_container {
+    flex-direction: column;
+  }
+
+  /* Styles for the slides on smaller screens */
+  .slide {
+    width: 60%;
+    margin: auto;
+  }
+}
+
+/* Media query for screens with a maximum width of 550px */
+@media screen and (max-width: 550px) {
+  /* Styles for the slides on smaller screens */
+  .slide {
+    width: 90%;
+    margin: auto;
+  }
+}
+/* review section Styling Ends Here*/
+
+
+/* Footer Section Starts*/
+/* Styles for the footer */
+footer {
+  padding: 8vw;
+  background-color: #1B9C85;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+/* Styles for the footer columns */
+footer .footer-col {
+  padding-bottom: 40px;
+}
+
+/* Styles for the footer headings */
+footer h3 {
+  color: black;
+  font-weight: 700;
+  padding-bottom: 20px;
+}
+
+/* Styles for the footer list items */
+footer li {
+  list-style: none;
+  color: white;
+  padding: 10px 0;
+  font-size: 15px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+/* Styles for the footer list items on hover */
+footer li:hover {
+  color: #4C4C6D;
+}
+
+/* Styles for the footer paragraphs */
+footer p {
+  color: #4C4C6D;
+}
+
+/* Styles for the subscription section in the footer */
+footer .subscribe {
+  margin-top: 20px;
+}
+
+/* Styles for the input field in the subscription section */
+footer input {
+  width: 220px;
+  padding: 15px 12px;
+  background: #00DFA2;
+  border: none;
+  outline: none;
+}
+
+/* Styles for the subscription button */
+footer .subscribe a {
+  text-decoration: none;
+  font-size: 0.9rem;
+  padding: 12px 15px;
+  background-color: white;
+  font-weight: 700;
+}
+
+/* Styles for the subscription button with the "button1" class */
+footer .subscribe a.button1 {
+  color: #00DFA2;
+  background-color: #fff;
+}
+
+/* Styles for the subscription button on hover */
+footer .subscribe a.button1:hover {
+  color: black;
+  background-color: #FFC26F;
+}
+
+/* Styles for the copyright section in the footer */
+footer .copyright {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+/* Styles for the copyright paragraph */
+footer .copyright p {
+  color: white;
+}
+
+/* Styles for the social media profile links */
+footer .pro-links {
+  margin-top: 0px;
+}
+
+/* Styles for the social media profile icons */
+footer .pro-links i {
+  padding: 10px 13px;
+  border: 1px solid white;
+  cursor: pointer;
+  transition: 0.3s ease;
+  background-color: white;
+  color: #1B9C85;
+}
+
+/* Styles for the social media profile icons on hover */
+footer .pro-links i:hover {
+  background-color: #FFC26F;
+  color: black;
+  cursor: pointer;
+  border: 1px solid #00DFA2;
+}
+
+/* Styles for the popup message */
+#popup {
+  display: none;
+  position: fixed;
+  top: 75%;
+  right: 0%;
+  transform: translate(-50%, -50%);
+  padding: 10px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  z-index: 9999;
+}

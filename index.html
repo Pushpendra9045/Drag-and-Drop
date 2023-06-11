@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Let's Drop and drag your image</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+  <!-- Navigation Bar -->
+  <nav>
+    <img src="Image/icon-3.png" class="logo" alt="" />
+    <div class="navigation">
+      <ul>
+        <li class="all_list"><a href="#">Home</a></li>
+        <li class="all_list"><a href="#">Service</a></li>
+        <li class="all_list"><a href="#">Feedback</a></li>
+        <li class="all_list"><a href="#">Login</a></li>
+        <li id="bar"><img src="Image/menu-no-background.png" alt=""></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Pop Up on successfully dragging image -->
+<!-- The following code displays a pop-up message when an image is successfully dragged -->
+
+<div class="popup" id="popup">
+  <p>Image dragged successfully!</p>
+</div>
+
+<!-- Home section -->
+<!-- The following code represents the home section of the webpage -->
+
+<section class="drag_n_drop_container" id="Home-container">
+  <!-- Home image -->
+  <div class="home-img">
+    <img src="Image/drag.gif" alt="" />
+  </div>
+  
+  <!-- Home text -->
+  <div class="home-text">
+    <h2>Drag and drop images from one place to another</h2>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat
+      quibusdam exercitationem voluptatem totam voluptas laudantium nemo
+      amet aut ad quisquam rem, eius obcaecati odit. Temporibus quas
+      explicabo eveniet et sapiente.
+    </p>
+    
+    <!-- Feature 1 -->
+    <div class="home-fe">
+      <img src="Image/fea2.png" alt="" />
+      <div class="fe-text">
+        <h5>Lorem ipsum dolor</h5>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          Blanditiis corrupti, quas ad recusandae quaerat ea. Ullam
+          voluptatem pariatur inventore incidunt.
+        </p>
+      </div>
+    </div>
+
+    <!-- Feature 2 -->
+    <div class="home-fe">
+      <img src="Image/fast.png" alt="" />
+      <div class="fe-text">
+        <h5>Lorem ipsum dolor</h5>
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nulla
+          officiis asperiores ullam illo? Fugit recusandae aliquam nihil
+          dolorum exercitationem amet!
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+  <!-- Service Section -->
+  <!-- Service Section -->
+<!-- The following code represents the service section of the webpage -->
+
+<div class="container">
+  <!-- Service heading -->
+  <h2 class="service_heading">Let's Drag And Drop</h2>
+
+  <!-- Service content -->
+  <div class="service_content">
+    <!-- Left side -->
+    <div id="left">
+      <!-- List item 1 -->
+      <div class="list" draggable="true">
+        <img src="Image/puppy.png">
+        This is Puppy
+      </div>
+      
+      <!-- List item 2 -->
+      <div class="list" draggable="true">
+        <img src="Image/puppy.png">
+        This is Puppy
+      </div>
+    </div>
+    
+    <!-- Right side -->
+    <div id="right"></div>
+  </div>
+
+  <!-- Reset button -->
+  <button id="reset-button">Reset</button>
+</div>
+
+
+<!-- Feedback Section -->
+<!-- The following code represents the feedback section of the webpage -->
+
+<section class="review" id="review">
+  <!-- Sub-heading -->
+  <div class="sub-heading">Users Feedback</div>
+  
+  <!-- Heading -->
+  <div class="heading">What they say?</div>
+  
+  <!-- Slide container -->
+  <div class="slide_container">
+    <!-- Slide 1 -->
+    <div class="slide">
+      <!-- Slide header -->
+      <div class="slide_header">
+        <img src="Image/user.jpg" alt="User_photo">
+        <h2>Alice</h2>
+      </div>
+      
+      <!-- Slide content -->
+      <div class="slide_content">
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+          Ex, voluptate soluta natus ipsam similique at beatae sint
+          possimus dicta consequuntur eius molestiae pariatur atque sit
+          eligendi inventore magni! Temporibus, ipsa.
+        </p>
+      </div>
+    </div>
+    
+    <!-- Slide 2 -->
+    <div class="slide">
+      <!-- Slide header -->
+      <div class="slide_header">
+        <img src="Image/user.jpg" alt="User_photo">
+        <h2>Alice</h2>
+      </div>
+      
+      <!-- Slide content -->
+      <div class="slide_content">
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+          Ex, voluptate soluta natus ipsam similique at beatae sint
+          possimus dicta consequuntur eius molestiae pariatur atque sit
+          eligendi inventore magni! Temporibus, ipsa.
+        </p>
+      </div>
+    </div>
+    
+    <!-- Slide 3 -->
+    <div class="slide">
+      <!-- Slide header -->
+      <div class="slide_header">
+        <img src="Image/user.jpg" alt="User_photo">
+        <h2>Alice</h2>
+      </div>
+      
+      <!-- Slide content -->
+      <div class="slide_content">
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+          Ex, voluptate soluta natus ipsam similique at beatae sint
+          possimus dicta consequuntur eius molestiae pariatur atque sit
+          eligendi inventore magni! Temporibus, ipsa.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <!-- Footer section -->
+<footer>
+  <!-- Footer column 1 -->
+  <div class="footer-col">
+    <h3>Top Products</h3>
+    <li>Manage Reputation</li>
+    <li>Manage Reputation</li>
+    <li>Manage Reputation</li>
+    <li>Manage Reputation</li>
+  </div>
+
+  <!-- Footer column 2 -->
+  <div class="footer-col">
+    <h3>Top Products</h3>
+    <li>Manage Reputation</li>
+    <li>Manage Reputation</li>
+    <li>Manage Reputation</li>
+    <li>Manage Reputation</li>
+  </div>
+
+  <!-- Footer column 3 -->
+  <div class="footer-col">
+    <h3>Top Products</h3>
+    <li>Manage Reputation</li>
+    <li>Manage Reputation</li>
+    <li>Manage Reputation</li>
+    <li>Manage Reputation</li>
+  </div>
+
+  <!-- Footer column 4 -->
+  <div class="footer-col">
+    <h3>Top Products</h3>
+    <li>Manage Reputation</li>
+    <li>Manage Reputation</li>
+    <li>Manage Reputation</li>
+    <li>Manage Reputation</li>
+  </div>
+
+  <!-- Footer column 5 -->
+  <div class="footer-col">
+    <h3>Newsletter</h3>
+    <p>You can trust us, we only send promo offers</p>
+    <div class="subscribe">
+      <input type="text" placeholder="Your Email address">
+      <a href="#" class="button1">Subscribe</a>
+    </div>
+  </div>
+
+  <!-- Copyright -->
+  <div class="copyright">
+    <p>
+      Copyright @2023
+      All rights are reserved |
+      This Project Made by Pushpendra
+    </p>
+    <div class="pro-links">
+      <i class="fa fa-facebook"></i>
+      <i class="fa fa-instagram"></i>
+      <i class="fa fa-linkedin"></i>
+    </div>
+  </div>
+</footer>
+
+
+
+
+  <script src="script.js"></script>
+</body>
+
+</html>
